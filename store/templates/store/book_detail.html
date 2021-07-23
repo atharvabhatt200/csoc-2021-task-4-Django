@@ -43,15 +43,15 @@ $("#loan-button").click(function(){
 		},
 		success: function(data, status, xhr){
 			if(data['message'] == "success"){
-                alert("Book successfully issued");
+                alert("Book successfully issued!");
                 window.location.replace("/books/loaned");
 			}
 			else{
-				alert("Unable to issue this book");
+				alert("Unable to issue this book.");
 			}
 		},
 		error: function(xhr, status, err){
-			alert("Some error occured");
+			alert("Some error occured.");
 		}
 	})
 })
@@ -80,7 +80,7 @@ $("#submit-button").click(function(){
 			}
 		},
 		error: function(xhr, status, err){
-			alert("Some error occured");
+			alert("Some error occured.");
 		}
 	})
 })
